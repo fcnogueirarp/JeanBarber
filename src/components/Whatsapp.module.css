@@ -1,0 +1,17 @@
+.container_whats {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+}
+
+.whats {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100px;
+  height: 100px;
+}
+
+.whats:hover {
+  cursor: pointer;
+}

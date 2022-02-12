@@ -1,0 +1,71 @@
+.box_container{
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  color: #f9f9f9;
+  margin: 0 auto;
+  height: 80vh;
+  border: 5px solid white;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: #f9f9f9;
+  margin: 0 auto;
+  height: 80vh;
+  border: 5px solid white;
+  width: 60vw;
+}
+.box h1 {
+  color: yellow;
+  font-weight: bold;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  color: #f9f9f9;
+}
+.container_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: black;
+  color: #f9f9f9;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.form label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.form input {
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+}
+
+.form textarea {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+}
+.form Button {
+  text-align: left;
+  margin-top: 10px;
+}

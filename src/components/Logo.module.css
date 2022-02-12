@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.logo {
+  width: 500px;
+  padding: 25px;
+}

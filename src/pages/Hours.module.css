@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 80vh;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  gap: 0.5em;
+}
+
+.container li:first-child {
+  background-color: gray;
+}
+
+.container li:nth-child(2) {
+  background-color: gray;
+}
+.container li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 20vh;
+  background-color: yellow;
+  color: black;
+  border-radius: 50%;
+  padding: auto;
+  font-size: 1.5em;
+}
