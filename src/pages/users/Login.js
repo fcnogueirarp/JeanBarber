@@ -2,39 +2,35 @@ import { Box } from '@mui/system';
 import { Container } from '@mui/material';
 import Logo from '../../components/Logo';
 import styles from './Login.module.css';
-import { useContext, useEffect, useState } from 'react';
-import api from '../../utils/api';
-
+import { useContext, useState } from 'react';
 import { Context } from '../../context/userContext';
 
-export default function Login() {
+function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [user, setUser] = useState({});
-
   const { login } = useContext(Context);
 
-  useEffect(() => {
-    api
-      .post('/users/login', {
-        email: email,
-        password: password,
-      })
-      .then(response => setUser(response.data))
-      .catch(err => {
-        console.error('ops! ocorreu um erro' + err);
-      });
-  }, []);
-  console.log(user);
+  const user = {
+    email: email,
+    password: password,
+  };
 
-  function handleChange(e) {
-     setUser({...user, [e.target.name]: e.target.value})  
+  function handleChangeEmail(e) {
+    const email = e.target.value;
+    setEmail(email);
+    console.log(email);
   }
- 
+  function handleChangePassword(e) {
+    const password = e.target.value;
+    setPassword(password);
+    console.log(password);
+  }
   function handleSubmit(e) {
     e.preventDefault();
     login(user);
+    localStorage.setItem('user', user);
   }
+
   return (
     <Box className={styles.box}>
       <Container className={styles.container}>
@@ -47,14 +43,14 @@ export default function Login() {
             type="email"
             name="email"
             placeholder="Digite seu e-mail"
-            onChange={handleChange}
+            onChange={handleChangeEmail}
           />
           <label htmlFor="password">Senha:</label>
           <input
             type="password"
             name="password"
             placeholder="Digite sua senha"
-            onChange={handleChange}
+            onChange={handleChangePassword}
           />
           <input className={styles.button} type="submit" value="ENTRAR" />
         </form>
@@ -66,3 +62,4 @@ export default function Login() {
     </Box>
   );
 }
+export default Login;

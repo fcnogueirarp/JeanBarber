@@ -1,11 +1,15 @@
+import { Container } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react';
 
 import styles from './Hours.module.css';
 
 export default function Hours() {
   return (
-    <div className={styles.container}>
-      <h1>Horário de atendimento</h1>
+    <Box className={styles.box}>
+      <Container className={styles.container}>
+        <h1>Horário de atendimento</h1>
+      </Container>
       <ul>
         <li>
           <strong>DOM</strong> <br /> -
@@ -29,6 +33,6 @@ export default function Hours() {
           <strong>SAB</strong> <br /> 08:30 - 19:00
         </li>
       </ul>
-    </div>
+    </Box>
   );
 }

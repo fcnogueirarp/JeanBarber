@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: top;
-  background-color: yellow;
+  background-color: #bcff03;
   height: 80vh;
   color: white;
   padding: 50px;
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: black;
+  background-color: #9f9cff;
   width: 100%;
   height: 60vh;
   border-radius: 15px;
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: colum;
   justify-content: center;
-  background-color: black;
+  background-color: #9f9cff;
   width: 100%;
   height: auto;
   border-radius: 15px;
@@ -42,7 +42,7 @@
   display: flex;
   justify-content: flex-start;
   color: #f9f9f9;
-  background-color: black;
+  background-color: #9f9cff;
 }
 
 .container input {
@@ -55,8 +55,8 @@
   display: flex;
   justify-content: center;
   height: 30px;
-  color: yellow;
-  background-color: black;
+  color: bcff03;
+  background-color: #9f9cff;
   font-size: 1.2em;
   font-weight: bold;
   padding: 5px;
@@ -66,7 +66,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: black;
+  background-color: #9f9cff;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -81,4 +81,177 @@
   color: orange;
   transition: all 0.2s;
   cursor: pointer;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  background-color: #9f9cff;
+}
+.checkbox label {
+  display: flex;
+  width: 100%;
+  background-color: #9f9cff;
+}
+.color {
+  color: #bcff03;
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  color: #9f9cff;
+  background-color: #bcff03;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.button2:hover {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  color: #bcff03;
+  background-color: #9f9cff;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+@media screen and (min-width: 1452) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    background-color: #bcff03;
+    height: 80vh;
+    color: white;
+    padding: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #9f9cff;
+    width: 100%;
+    height: 60vh;
+    border-radius: 15px;
+  }
+
+  .container h2 {
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    background-color: #9f9cff;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    width: 60%;
+    font-size: 1.2em;
+  }
+
+  .container label {
+    display: flex;
+    justify-content: flex-start;
+    color: #f9f9f9;
+    background-color: #9f9cff;
+  }
+
+  .container input {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    color: bcff03;
+    background-color: #9f9cff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .container_checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #9f9cff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .checkbox {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+  }
+
+  .button:hover {
+    color: orange;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  .fieldset {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .checkbox {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: #9f9cff;
+  }
+  .checkbox label {
+    display: flex;
+    width: 100%;
+    background-color: #9f9cff;
+  }
+  .color {
+    color: #bcff03;
+  }
+
+  .button2 {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    color: #9f9cff;
+    background-color: #bcff03;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .button2:hover {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    color: #bcff03;
+    background-color: #9f9cff;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px;
+  }
 }

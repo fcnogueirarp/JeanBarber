@@ -4,11 +4,12 @@ import Logo from '../components/Logo';
 import photo from '../assets/img/principal.png';
 import Whatsapp from '../components/Whatsapp';
 import styleText from '../assets/img/styleText.png';
+import { Box } from '@mui/system';
 
 export default function Home() {
   return (
-    <div className={styles.home}>
-      <Logo />
+    <Box className={styles.home}>
+      <Logo className={styles.logo} />
       <div className={styles.container_photos}>
         <img
           className={styles.photo}
@@ -18,6 +19,6 @@ export default function Home() {
         <img className={styles.photo} src={styleText} alt="texto estilizado" />
       </div>
       <Whatsapp />
-    </div>
+    </Box>
   );
 }

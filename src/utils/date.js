@@ -5,6 +5,9 @@ const day = today.getDate();
 const month = today.getMonth();
 const year = today.getFullYear();
 
+const nextWeek = [localStorage.getItem('nextWeek')];
+const nextWeekClicked = localStorage.getItem('nextWeekClicked');
+
 const lastDayOfMonth = lastDay(today).getDate();
 const daysOfMonth = [day]; //since day acurrent to final date of month
 
@@ -41,7 +44,7 @@ let j = 0;
   daysOfWeek = [...daysOfMonth].splice(`${number}`, 7);
   //console.log('daysOfWeek ' + daysOfWeek);
 
-  const nextWeek = [...daysOfMonth].splice(7,7);
+  const nextWeek = [...daysOfMonth].splice(7, 7);
   console.log(nextWeek);
 
   //  console.log('TODAY ' + today);

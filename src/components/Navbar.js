@@ -6,6 +6,7 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 
 import styles from './Navbar.module.css';
 import UseNavigate from '../hooks/useNavigate';
+import { Box } from '@mui/system';
 
 function handleChange() {
   <UseNavigate />;
@@ -13,7 +14,7 @@ function handleChange() {
 
 export default function navbar() {
   return (
-    <div className={styles.nav} role="presentation" onClick={handleChange}>
+    <Box className={styles.nav} role="presentation" onClick={handleChange}>
       <Breadcrumbs aria-label="breadcrumb">
         <Link
           underline="hover"
@@ -32,15 +33,6 @@ export default function navbar() {
         >
           <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
           SOBRE NÓS
-        </Link>
-        <Link
-          underline="hover"
-          sx={{ display: 'flex', alignItems: 'center' }}
-          color="inherit"
-          href="/servicos"
-        >
-          <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          PREÇOS E SERVIÇOS
         </Link>
         <Link
           underline="hover"
@@ -69,16 +61,7 @@ export default function navbar() {
           <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
           AGENDE ONLINE
         </Link>
-        <Link
-          underline="hover"
-          sx={{ display: 'flex', alignItems: 'center' }}
-          color="inherit"
-          href="/login"
-        >
-          <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Login
-        </Link>
       </Breadcrumbs>
-    </div>
+    </Box>
   );
 }

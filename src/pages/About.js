@@ -6,7 +6,6 @@ import Whatsapp from '../components/Whatsapp';
 
 export default function About() {
   return (
-    <>
       <section className={styles.container}>
         <div className={styles.container_news}>
           <h1>JEAN BARBER</h1>
@@ -32,6 +31,5 @@ export default function About() {
 
         <Whatsapp />
       </section>
-    </>
   );
 }

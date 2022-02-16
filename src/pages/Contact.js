@@ -2,9 +2,12 @@ import styles from './Contact.module.css';
 
 import React from 'react';
 import { Box } from '@mui/system';
-import { Button, Container } from '@mui/material';
+import { Container } from '@mui/material';
+import screenWhatsapp from '../../src/assets/img/screenWhatsapp.png';
 
 export default function Contact() {
+  const variable = 'Olá! Estou entrando em contato através do site da Jean Barber';
+
   return (
     <Box className={styles.box_container}>
       <Box className={styles.box}>
@@ -29,15 +32,14 @@ export default function Contact() {
         <Container className={styles.container_form}>
           <form className={styles.form}>
             <h1>Deixe seu recado</h1>
-            <label htmlFor="name">Nome:</label>
-            <input type="text" name="name" placeholder="Digite seu nome" />
-            <label htmlFor="phone">Telefone:</label>
-            <input type="text" name="phone" placeholder="Digite seu telefone" />
-            <label htmlFor="message">Mensagem:</label>
-            <textarea name="message" placeholder="Deixe seu recado" />
-            <Button variant="contained" color="success">
-              Enviar
-            </Button>
+
+            <a
+              href={`https://web.whatsapp.com/send?phone=5516993680212&text=${variable}&source=&data=`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img className={styles.photo} src={screenWhatsapp} />
+            </a>
           </form>
         </Container>
       </Box>
