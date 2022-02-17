@@ -9,14 +9,17 @@ import { Box } from '@mui/system';
 export default function Home() {
   return (
     <Box className={styles.home}>
-      <Logo className={styles.logo} />
+      <div className={styles.logo}>
+        <Logo />
+      </div>
       <div className={styles.container_photos}>
         <img
           className={styles.photo}
           src={photo}
           alt="homem com a barba bem feita"
         />
-        <img className={styles.photo} src={styleText} alt="texto estilizado" />
+
+        <img className={styles.text} src={styleText} alt="texto estilizado" />
       </div>
       <Whatsapp />
     </Box>

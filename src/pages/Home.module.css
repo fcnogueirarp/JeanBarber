@@ -1,34 +1,14 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background: #9f9cff;
-}
-
-.container_photos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  background-color: #bcff03;
-}
-
-.photo {
-  display: flex;
-  flex: 1;
-}
-
-@media screen and (max-width: 1452) {
+@media (max-width: 1452px) {
   .home {
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 300px;
     background: #9f9cff;
   }
 
   .container_photos {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
@@ -38,4 +18,35 @@
   .photo {
     width: 100%;
   }
+}
+
+/*tela acima de 1024*/
+.home {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #9f9cff;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #9f9cff;
+  border-radius: 5px;
+
+}
+.container_photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #bcff03;
+}
+
+.photo {
+  width: 100%;
+}
+.text {
+  width: 70%;
 }

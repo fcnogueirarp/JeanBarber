@@ -21,7 +21,6 @@ export default function Reserve() {
   const [hour, setHour] = useState('');
   const [reserve, setReserve] = useState({});
 
-
   const price1 = 25;
   const price2 = 20;
   const price3 = 30;
@@ -119,122 +118,120 @@ export default function Reserve() {
     }
   }
   return (
-    <Box className={styles.box}>
-      <Container className={styles.container}>
-        <h4>MARQUE UM OU MAIS SERVIÇOS</h4>
-        <form className={styles.form}>
-          <div className={styles.container_title_price}>
-            <h4 className={styles.title}>{service1}</h4>
-            <div className={styles.container_checkbox}>
-              <input
-                type="checkbox"
-                className={styles.checkbox}
-                onChange={handleChangeService1}
-                value={`${service1}*${price1}`}
-              />
-            </div>
-          </div>
-          <div className={styles.container_title_price}>
-            <h4 className={styles.title}>{service2}</h4>
-            <div className={styles.container_checkbox}>
-              <input
-                type="checkbox"
-                className={styles.checkbox}
-                onChange={handleChangeService2}
-                value={`${service2}*${price2}`}
-              />
-            </div>
-          </div>
-          <div className={styles.container_title_price}>
-            <h4 className={styles.title}>{service3}</h4>
-            <div className={styles.container_checkbox}>
-              <input
-                type="checkbox"
-                className={styles.checkbox}
-                onChange={handleChangeService3}
-                value={`${service3}*${price3}`}
-              />
-            </div>
-          </div>
-          <div className={styles.container_title_price}>
-            <h4 className={styles.title}>{service4}</h4>
-            <div className={styles.container_checkbox}>
-              <input
-                type="checkbox"
-                className={styles.checkbox}
-                onChange={handleChangeService4}
-                value={`${service4}*${price1}`}
-              />
-            </div>
-          </div>
-          <div className={styles.container_title_price}>
-            <h4 className={styles.title}>{service5}</h4>
-            <div className={styles.container_checkbox}>
-              <input
-                type="checkbox"
-                className={styles.checkbox}
-                onChange={handleChangeService5}
-                value={`${service5}*${price2}`}
-              />
-            </div>
-          </div>
-        </form>
-        <div>
-          <strong>ESCOLHER UMA DATA E HORA</strong>
-        </div>
-        <br />
-        {getMonthsYear()} {/*Fev 2022*/}
-        <br />
-        <form onSubmit={handleSubmit}>
-          <div className={styles.week}>
-            <div className={styles.week_name}>{setNameOfDaysOfWeek()}</div>
-
-            <div
-              className={
-                clicked ? styles.week_number_clicked : styles.week_number
-              }
-              onClick={handleChangeDay}
-            >
-              {setDaysOfWeekInNumber()}
-            </div>
-          </div>
-          <br />
-          <div className={styles.week}>
-            <div className={styles.week_number}>
-              <p>
-                <strong>MANHÃ</strong>
-              </p>
-            </div>
-            <div className={styles.week_number} onClick={handleChangeHour}>
-              {morning.map(hour => (
-                <span onClick={handleChangeColor} key={getId()}>
-                  {hour}
-                </span>
-              ))}
-            </div>
-          </div>
-          <br />
-          <div className={styles.week}>
-            <div className={styles.week_number}>
-              <p>
-                <strong>TARDE</strong>
-              </p>
-            </div>
-            <div className={styles.week_number} onClick={handleChangeHour}>
-              {afternoon.map(hour => (
-                <span key={getId()}>{hour}</span>
-              ))}
-            </div>
-          </div>
-          <div className={styles.button_container_reserve}>
+    <Container className={styles.container}>
+      <h4>MARQUE UM OU MAIS SERVIÇOS</h4>
+      <form className={styles.form}>
+        <Container className={styles.container_title_price}>
+          <h4 className={styles.title}>{service1}</h4>
+          <div className={styles.container_checkbox}>
             <input
-              className={styles.button_reserve}
-              value="CONFIRMAR"
-              type="submit"
+              type="checkbox"
+              className={styles.checkbox}
+              onChange={handleChangeService1}
+              value={`${service1}*${price1}`}
             />
           </div>
-        </form>
-      </Container>
-    </Box>
+        </Container>
+        <Container className={styles.container_title_price}>
+          <h4 className={styles.title}>{service2}</h4>
+          <div className={styles.container_checkbox}>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              onChange={handleChangeService2}
+              value={`${service2}*${price2}`}
+            />
+          </div>
+        </Container>
+        <Container className={styles.container_title_price}>
+          <h4 className={styles.title}>{service3}</h4>
+          <div className={styles.container_checkbox}>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              onChange={handleChangeService3}
+              value={`${service3}*${price3}`}
+            />
+          </div>
+        </Container>
+        <Container className={styles.container_title_price}>
+          <h4 className={styles.title}>{service4}</h4>
+          <div className={styles.container_checkbox}>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              onChange={handleChangeService4}
+              value={`${service4}*${price1}`}
+            />
+          </div>
+        </Container>
+        <Container className={styles.container_title_price}>
+          <h4 className={styles.title}>{service5}</h4>
+          <div className={styles.container_checkbox}>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              onChange={handleChangeService5}
+              value={`${service5}*${price2}`}
+            />
+          </div>
+        </Container>
+      </form>
+      <div>
+        <strong>ESCOLHER UMA DATA E HORA</strong>
+      </div>
+      <br />
+      {getMonthsYear()} {/*Fev 2022*/}
+      <br />
+      <form onSubmit={handleSubmit}>
+        <div className={styles.week}>
+          <div className={styles.week_name}>{setNameOfDaysOfWeek()}</div>
+
+          <div
+            className={
+              clicked ? styles.week_number_clicked : styles.week_number
+            }
+            onClick={handleChangeDay}
+          >
+            {setDaysOfWeekInNumber()}
+          </div>
+        </div>
+        <br />
+        <div className={styles.week}>
+          <div className={styles.week_number}>
+            <p>
+              <strong>MANHÃ</strong>
+            </p>
+          </div>
+          <div className={styles.week_number} onClick={handleChangeHour}>
+            {morning.map(hour => (
+              <span onClick={handleChangeColor} key={getId()}>
+                {hour}
+              </span>
+            ))}
+          </div>
+        </div>
+        <br />
+        <div className={styles.week}>
+          <div className={styles.week_number}>
+            <p>
+              <strong>TARDE</strong>
+            </p>
+          </div>
+          <div className={styles.week_number} onClick={handleChangeHour}>
+            {afternoon.map(hour => (
+              <span key={getId()}>{hour}</span>
+            ))}
+          </div>
+        </div>
+        <div className={styles.button_container_reserve}>
+          <input
+            className={styles.button_reserve}
+            value="CONFIRMAR"
+            type="submit"
+          />
+        </div>
+      </form>
+    </Container>
   );
 }

@@ -6,11 +6,12 @@ import { Container } from '@mui/material';
 import screenWhatsapp from '../../src/assets/img/screenWhatsapp.png';
 
 export default function Contact() {
-  const variable = 'Olá! Estou entrando em contato através do site da Jean Barber';
+  const variable =
+    'Olá! Estou entrando em contato através do site da Jean Barber';
 
   return (
-    <Box className={styles.box_container}>
-      <Box className={styles.box}>
+    <Box className={styles.box}>
+      <Container className={styles.container}>
         <Container className={styles.container_contacts}>
           <Container className={styles.contacts}>
             <h1>Contatos</h1>
@@ -42,7 +43,7 @@ export default function Contact() {
             </a>
           </form>
         </Container>
-      </Box>
+      </Container>
     </Box>
   );
 }

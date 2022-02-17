@@ -1,66 +1,5 @@
-.box_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #bcff03;
-  color: #f9f9f9;
-  margin: 0 auto;
-  border: 5px solid white;
-  font-weight: bold;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #9f9cff;
-  color: #f9f9f9;
-  margin: 0 auto;
-  border: 5px solid white;
-  width: 60vw;
-}
-.box h1 {
-  color: #bcff03;
-  font-weight: bold;
-}
-.map {
-  display: flex;
-  flex-direction: column;
-}
-
-.container_contacts {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #9f9cff;
-  color: #f9f9f9;
-}
-.container_form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #9f9cff;
-  color: #f9f9f9;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex: 1;
-}
-.form Button {
-  text-align: left;
-  margin-top: 10px;
-}
-
-img {
-  width: 200px;
-}
-
-@media screen and (min-width: 1452) {
-  .box_container {
+@media (max-width: 1452px) {
+  .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +10,7 @@ img {
     font-weight: bold;
   }
 
-  .box {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +20,7 @@ img {
     border: 5px solid white;
     width: 60vw;
   }
-  .box h1 {
+  .container h1 {
     color: #bcff03;
     font-weight: bold;
   }
@@ -120,4 +59,66 @@ img {
   img {
     width: 200px;
   }
+}
+
+/* Tela grande */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bcff03;
+  color: #f9f9f9;
+  margin: 0 auto;
+  border: 5px solid white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9f9cff;
+  color: #f9f9f9;
+  margin: 0 auto;
+  border: 5px solid white;
+  width: 60vw;
+}
+.container h1 {
+  color: #bcff03;
+  font-weight: bold;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #9f9cff;
+  color: #f9f9f9;
+}
+.container_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #9f9cff;
+  color: #f9f9f9;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.form Button {
+  text-align: left;
+  margin-top: 10px;
+}
+
+img {
+  width: 200px;
 }

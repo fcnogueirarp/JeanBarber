@@ -38,15 +38,6 @@ export default function navbar() {
           underline="hover"
           sx={{ display: 'flex', alignItems: 'center' }}
           color="inherit"
-          href="/horarios"
-        >
-          <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          HORÁRIOS
-        </Link>
-        <Link
-          underline="hover"
-          sx={{ display: 'flex', alignItems: 'center' }}
-          color="inherit"
           href="/contatos"
         >
           <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
